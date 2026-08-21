@@ -1,0 +1,202 @@
+generated: '2026-08-21'
+method: probed
+source: live probe of every Get Spiffy host resolved from DNS + apis.yml
+hit_count: 0
+note: 'No /.well-known/ document is served on any Get Spiffy host. www., blog. and status. return honest
+  404s. app.getspiffy.com (Flutter SPA on CloudFront) and fleet.getspiffy.com (React SPA on CloudFront)
+  are catch-alls: the control probe for a nonsense path returns 200 with the identical shell, so their
+  200s are soft-404s and are NOT recorded as documents. No WellKnown, SecurityTxt or AgentCard pointer
+  is emitted.'
+hosts:
+- host: https://www.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 404
+    bytes: 57310
+    catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /llms.txt
+    status: 200
+    note: HTTP 200 but content-type text/html; charset=UTF-8 and an HTML page body, not a machine-readable
+      document
+- host: https://my.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 404
+    bytes: 528
+    catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://fleet.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 200
+    bytes: 544
+    catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 'soft-404: host answers 200 with the same 544-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 'soft-404: host answers 200 with the same 544-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: 'soft-404: host answers 200 with the same 544-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 'soft-404: host answers 200 with the same 544-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://app.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 200
+    bytes: 2275
+    catch_all: true
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/api-catalog
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/agent-card.json
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/agent.json
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /.well-known/mcp.json
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+  - path: /llms.txt
+    status: 200
+    note: 'soft-404: host answers 200 with the same 2275-byte SPA shell for every path (see soft_404_control)
+      — not a served document'
+- host: https://blog.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 404
+    bytes: 58271
+    catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://status.getspiffy.com
+  soft_404_control:
+    path: /.well-known/ae-soft-404-control-probe-xyz
+    status: 404
+    bytes: 7890
+    catch_all: false
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /.well-known/mcp.json
+    status: 404
+  - path: /llms.txt
+    status: 404

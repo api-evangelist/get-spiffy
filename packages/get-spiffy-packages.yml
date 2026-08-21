@@ -1,0 +1,42 @@
+generated: '2026-08-21'
+method: searched
+source: https://registry.npmjs.org, https://pypi.org, https://rubygems.org, https://crates.io,
+  https://github.com/get-spiffy
+official_sdk_count: 0
+note: Get Spiffy publishes no client SDK for any API, in any language. The npm registry
+  carries exactly one package under the company's own @getspiffy scope, and it is a
+  scope-republished fork of a third-party open-source React component — not a client
+  library for a Get Spiffy API. The GitHub organization github.com/get-spiffy holds 12
+  public repositories and ALL 12 are forks of third-party projects (react-calendar-timeline,
+  chatwoot, OBD.Net, nhtsa, geotab, smarty_streets, Xamarin/Flutter widgets); there is
+  no first-party source. No SDKs pointer is emitted in apis.yml, because no SDK exists.
+packages:
+- language: javascript
+  registry: npm
+  name: '@getspiffy/react-calendar-timeline'
+  url: https://www.npmjs.com/package/@getspiffy/react-calendar-timeline
+  install: npm install @getspiffy/react-calendar-timeline
+  official: true
+  sdk: false
+  version: 0.15.157
+  published: '2018-12-21'
+  note: Published under Get Spiffy's own npm scope, so it is first-party-published, but
+    it is a vendored fork of namespace-ee/react-calendar-timeline (an OSS React timeline
+    widget), not a client library for a Get Spiffy API. Last release 2018-12-21 — over
+    seven years stale. Counted as a package, NOT as an SDK.
+registries_checked:
+- registry: npm
+  query: getspiffy
+  result: 1 package (the scoped fork above); no @getspiffy SDK package exists
+- registry: pypi
+  query: getspiffy
+  result: 404 — no package
+- registry: rubygems
+  query: getspiffy
+  result: empty result set
+- registry: crates.io
+  query: getspiffy
+  result: 0 crates
+- registry: github
+  query: github.com/get-spiffy
+  result: 12 public repositories, 12 of them forks, 0 first-party

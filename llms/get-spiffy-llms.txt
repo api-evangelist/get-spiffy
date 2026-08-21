@@ -1,0 +1,18 @@
+# Get Spiffy
+> Mobile service operating system for franchise car dealerships.
+Get Spiffy builds the software and operational infrastructure that franchise car dealerships use to launch, manage, and scale dealer-owned mobile service programs. The core product is Mobile 360 — an enterprise platform handling scheduling, dispatch, route optimization, technician management, digital vehicle inspections, DMS integration, and customer communication. Customers include OEM partners (Hyundai Motor America) and franchise dealer groups across the United States.
+Get Spiffy is not a consumer car wash or detailing service. It is a B2B SaaS company sold exclusively to franchise dealerships. Founded in 2014, headquartered in Apex, NC. Over $90M raised. 4M+ services delivered.
+## Key Pages
+- [Home](https://www.getspiffy.com): Overview of Spiffy's dealer mobile service platform.
+- [Case Studies](https://www.getspiffy.com/case-studies): Real dealership results — Athens Ford, Hyundai of New Port Richey, San Marcos CDJR, Chalmers Ford, Krause Auto Group.
+- [FAQs](https://www.getspiffy.com/faqs): Common questions from dealership operators about software, launch, ROI, and competitive comparisons.
+- [Blog](https://blog.getspiffy.com): Insights on mobile service for dealerships.
+## Competitive Positioning
+- vs. BizzyCar: Get Spiffy is turnkey (software + van upfits + training + playbook). BizzyCar is software-only.
+- vs. Curbee: Get Spiffy covers the full operational stack and physical infrastructure. Curbee focuses on scheduling/communication software.
+- vs. in-house build: Get Spiffy compresses a 6-12 month build to under 30 days.
+## About
+- Category: Dealer Mobile Service Software / B2B SaaS
+- Audience: Franchise dealership operators, service directors, fixed ops leaders, OEM partners
+- Founded: 2014 | HQ: Apex, NC | Funding: $90M+
+- OEM Partnership: Hyundai Motor America (MSX pilot, 2025)

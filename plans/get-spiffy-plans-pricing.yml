@@ -1,0 +1,21 @@
+generated: '2026-08-21'
+method: searched
+source: https://www.getspiffy.com/
+plan_count: 0
+plans: []
+note: Get Spiffy publishes no pricing or plans page. https://www.getspiffy.com/pricing
+  does not exist (the request resolves to the homepage), and no /plans, /pricing or
+  rate-card page appears in the sitemap. The company sells a turnkey dealer program
+  through a contact-sales motion — every product page terminates in a "Contact Us" /
+  demo-request form (https://www.getspiffy.com/contact) rather than a published tier.
+  This is an honest zero, not an unchecked field.
+evidence:
+- url: https://www.getspiffy.com/pricing
+  status: 200
+  note: Resolves to the homepage (identical 146,915-byte body) — no pricing page exists.
+- url: https://www.getspiffy.com/sitemap.xml
+  status: 200
+  note: No pricing/plans URL present.
+- url: https://www.getspiffy.com/contact
+  status: 200
+  note: Contact-sales form, the actual entry point for commercial terms.

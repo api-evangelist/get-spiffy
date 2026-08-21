@@ -1,7 +1,18 @@
 aid: get-spiffy
 name: Spiffy
-description: 'Spiffy is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Get Spiffy, Inc. (Spiffy) is a B2B SaaS and operations company that sells
+  a mobile service operating system to franchise car dealerships. Its core product,
+  Mobile 360, is an enterprise platform covering scheduling, dispatch, route optimization,
+  technician management, digital vehicle inspections, DMS integration and customer
+  communication, sold as a turnkey program alongside van upfits, connected devices
+  (Easy Tread, Easy Flow, Smart Tumbler) and technician training. Spiffy also runs
+  fleet and Amazon DSP service programs, and operates a customer booking portal and a
+  fleet portal. Founded in 2014 and headquartered in Apex, North Carolina, the company
+  has raised more than $90M and reports over 4 million completed services, with OEM
+  work including a Hyundai Motor America pilot. Spiffy publishes no public developer
+  program, API reference or machine-readable specification; its Fleet portal API is an
+  internal, credentialed surface with no published contract.'
+image: https://2762956.fs1.hubspotusercontent-na1.net/hubfs/2762956/Spiffy-Logo-Master.svg
 url: https://raw.githubusercontent.com/api-evangelist/get-spiffy/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,14 @@ created: '2026-08-21'
 modified: '2026-08-21'
 tags:
 - Company
+- Automotive
+- Mobile Vehicle Service
+- Dealership Software
+- Fleet Management
+- Field Service Management
+- Vehicle Inspection
+- Scheduling and Dispatch
+- B2B SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,55 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/get-spiffy-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/get-spiffy_stock/
+  url: https://www.getspiffy.com/
+- type: Blog
+  url: https://blog.getspiffy.com/
+- type: Support
+  url: https://www.getspiffy.com/contact
+- type: TermsOfService
+  url: https://www.getspiffy.com/spiffy-terms-of-use
+- type: PrivacyPolicy
+  url: https://www.getspiffy.com/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/get-spiffy
+- type: StatusPage
+  url: https://status.getspiffy.com/
+- type: LLMsTxt
+  url: llms/get-spiffy-llms.txt
+- type: Lifecycle
+  url: lifecycle/get-spiffy-lifecycle.yml
+- type: Packages
+  url: packages/get-spiffy-packages.yml
+- type: Plans
+  url: plans/get-spiffy-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/get-spiffy-rate-limits.yml
+x-enrichment:
+  date: '2026-08-21'
+  status: minimal
+  artifacts_added: 7
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: Get Spiffy sells a turnkey dealer mobile-service program (software plus vans,
+    devices and training) with no developer program of any kind — no developer/docs/api
+    subdomain resolves, the company's own llms.txt enumerates every key page and names
+    no API, and the only API that exists is the undocumented, credentialed Fleet portal
+    backend at my.getspiffy.com/api/fleet/v1/ found in Spiffy's public JavaScript bundle,
+    which returns 404 for every spec path.
+  evidence:
+  - url: https://www.getspiffy.com/llms.txt
+    status: 200
+  - url: https://my.getspiffy.com/api/fleet/v1/
+    status: 404
+  - url: https://my.getspiffy.com/openapi.json
+    status: 404
+  - url: https://www.getspiffy.com/.well-known/api-catalog
+    status: 404
+  - url: https://github.com/get-spiffy
+    status: 200
+  checked: '2026-08-21'

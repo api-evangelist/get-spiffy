@@ -1,0 +1,29 @@
+generated: '2026-08-21'
+method: searched
+source: https://status.getspiffy.com/
+status_page: https://status.getspiffy.com/
+status_page_provider: UptimeRobot
+status_page_evidence:
+  url: https://status.getspiffy.com/
+  http_status: 200
+  fetched: '2026-08-21'
+  note: Public service-status page for Get Spiffy, hosted on stats.uptimerobot.com (CNAME).
+    Publishes current service status, 90-day uptime history, an incident/status-update
+    history and email subscription. No component-level API or JSON status feed is exposed.
+versioning:
+  scheme: null
+  current: null
+  docs: null
+  note: No public API is published, so there is no public versioning scheme. The internal
+    Fleet portal backend uses a URI-path version (/api/fleet/v1/) observed in Get Spiffy's
+    own public JavaScript bundle, but that surface has no published contract or version policy.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  note: No deprecation or sunset policy is published.
+sla:
+  url: null
+  uptime_target: null
+  note: No public SLA or uptime target is published. Terms of Use
+    (https://www.getspiffy.com/spiffy-terms-of-use) is the only published service agreement.
+deprecated_operations: []
