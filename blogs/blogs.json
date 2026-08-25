@@ -1,0 +1,14 @@
+{
+  "repo": "get-spiffy",
+  "feeds": [
+    {
+      "source": "https://www.getspiffy.com/",
+      "feed_url": "https://www.getspiffy.com/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-08-22T20:20:02Z"
+}
